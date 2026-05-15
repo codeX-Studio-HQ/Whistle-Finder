@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Buscador de Silbatos</string>
+    <string name="monitoring">Monitoreando&#8230;</string>
+    <string name="service_stopped">Servicio Detenido</string>
+    <string name="settings">Ajustes</string>
+    <string name="sensitivity">Sensibilidad</string>
+    <string name="language">Idioma</string>
+    <string name="english">Inglés</string>
+    <string name="turkish">Turco</string>
+    <string name="german">Alemán</string>
+    <string name="spanish">Español</string>
+    <string name="french">Francés</string>
+    <string name="russian">Ruso</string>
+    <string name="chinese">Chino</string>
+    <string name="japanese">Japonés</string>
+    <string name="arabic">Árabe</string>
+    <string name="portuguese">Portugués</string>
+    <string name="hindi">Hindi</string>
+    <string name="grant_permission">Conceder Permiso</string>
+    <string name="permission_required">Se requieren permisos de micrófono y notificaciones para que esta aplicación funcione.</string>
+    <string name="whistle_detected">¡Silbato Detectado!</string>
+</resources>

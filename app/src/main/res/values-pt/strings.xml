@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Localizador de Apito</string>
+    <string name="monitoring">Monitorando&#8230;</string>
+    <string name="service_stopped">Serviço Parado</string>
+    <string name="settings">Configurações</string>
+    <string name="sensitivity">Sensibilidade</string>
+    <string name="language">Idioma</string>
+    <string name="english">Inglês</string>
+    <string name="turkish">Turco</string>
+    <string name="german">Alemão</string>
+    <string name="spanish">Espanhol</string>
+    <string name="french">Francês</string>
+    <string name="russian">Russo</string>
+    <string name="chinese">Chinês</string>
+    <string name="japanese">Japonês</string>
+    <string name="arabic">Árabe</string>
+    <string name="portuguese">Português</string>
+    <string name="hindi">Hindi</string>
+    <string name="grant_permission">Conceder Permissão</string>
+    <string name="permission_required">As permissões de microfone e notificação são necessárias para que este aplicativo funcione.</string>
+    <string name="whistle_detected">Apito Detetado!</string>
+</resources>

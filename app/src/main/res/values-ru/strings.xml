@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Поиск Свистка</string>
+    <string name="monitoring">Мониторинг&#8230;</string>
+    <string name="service_stopped">Служба Остановлена</string>
+    <string name="settings">Настройки</string>
+    <string name="sensitivity">Чувствительность</string>
+    <string name="language">Язык</string>
+    <string name="english">Английский</string>
+    <string name="turkish">Турецкий</string>
+    <string name="german">Немецкий</string>
+    <string name="spanish">Испанский</string>
+    <string name="french">Французский</string>
+    <string name="russian">Русский</string>
+    <string name="chinese">Китайский</string>
+    <string name="japanese">Японский</string>
+    <string name="arabic">Арабский</string>
+    <string name="portuguese">Португальский</string>
+    <string name="hindi">Хинди</string>
+    <string name="grant_permission">Дать Разрешение</string>
+    <string name="permission_required">Для работы приложения требуются разрешения на микрофон и уведомления.</string>
+    <string name="whistle_detected">Свисток Обнаружен!</string>
+</resources>

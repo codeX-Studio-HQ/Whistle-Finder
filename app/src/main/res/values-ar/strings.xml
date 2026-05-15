@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">مكتشف الصفير</string>
+    <string name="monitoring">جارِ المراقبة&#8230;</string>
+    <string name="service_stopped">الخدمة متوقفة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="sensitivity">الحساسية</string>
+    <string name="language">اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="turkish">التركية</string>
+    <string name="german">الألمانية</string>
+    <string name="spanish">الإسبانية</string>
+    <string name="french">الفرنسية</string>
+    <string name="russian">الروسية</string>
+    <string name="chinese">الصينية</string>
+    <string name="japanese">اليابانية</string>
+    <string name="arabic">العربية</string>
+    <string name="portuguese">البرتغالية</string>
+    <string name="hindi">الهندية</string>
+    <string name="grant_permission">منح الإذن</string>
+    <string name="permission_required">أذونات الميكروفون والإشعارات مطلوبة لكي يعمل هذا التطبيق.</string>
+    <string name="whistle_detected">تم اكتشاف صفير!</string>
+</resources>

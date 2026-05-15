@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Chercheur de Sifflet</string>
+    <string name="monitoring">Surveillance&#8230;</string>
+    <string name="service_stopped">Service Arrêté</string>
+    <string name="settings">Paramètres</string>
+    <string name="sensitivity">Sensibilité</string>
+    <string name="language">Langue</string>
+    <string name="english">Anglais</string>
+    <string name="turkish">Turc</string>
+    <string name="german">Allemand</string>
+    <string name="spanish">Espagnol</string>
+    <string name="french">Français</string>
+    <string name="russian">Russe</string>
+    <string name="chinese">Chinois</string>
+    <string name="japanese">Japonais</string>
+    <string name="arabic">Arabe</string>
+    <string name="portuguese">Portugais</string>
+    <string name="hindi">Hindi</string>
+    <string name="grant_permission">Accorder la Permission</string>
+    <string name="permission_required">Les autorisations de micro et de notification sont requises pour que cette application fonctionne.</string>
+    <string name="whistle_detected">Sifflet Détecté !</string>
+</resources>

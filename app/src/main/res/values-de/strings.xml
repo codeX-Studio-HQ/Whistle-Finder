@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pfeif-Finder</string>
+    <string name="monitoring">Überwachung&#8230;</string>
+    <string name="service_stopped">Dienst gestoppt</string>
+    <string name="settings">Einstellungen</string>
+    <string name="sensitivity">Empfindlichkeit</string>
+    <string name="language">Sprache</string>
+    <string name="english">Englisch</string>
+    <string name="turkish">Türkisch</string>
+    <string name="german">Deutsch</string>
+    <string name="grant_permission">Berechtigung erteilen</string>
+    <string name="permission_required">Mikrofon- und Benachrichtigungsberechtigungen sind erforderlich, damit diese App funktioniert.</string>
+    <string name="whistle_detected">Pfeifen erkannt!</string>
+</resources>

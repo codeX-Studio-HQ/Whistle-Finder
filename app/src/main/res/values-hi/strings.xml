@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">सीटी खोजने वाला</string>
+    <string name="monitoring">निगरानी जारी है&#8230;</string>
+    <string name="service_stopped">सेवा बंद है</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="sensitivity">संवेदनशीलता</string>
+    <string name="language">भाषा</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="turkish">तुर्की</string>
+    <string name="german">जर्मन</string>
+    <string name="spanish">स्पेनिश</string>
+    <string name="french">फ़्रेंच</string>
+    <string name="russian">रूसी</string>
+    <string name="chinese">चीनी</string>
+    <string name="japanese">जापानी</string>
+    <string name="arabic">अरबी</string>
+    <string name="portuguese">पुर्तगाली</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="grant_permission">अनुमति दें</string>
+    <string name="permission_required">इस ऐप को काम करने के लिए माइक्रोफ़ोन और नोटिफिकेशन अनुमति की आवश्यकता है।</string>
+    <string name="whistle_detected">सीटी का पता चला!</string>
+</resources>

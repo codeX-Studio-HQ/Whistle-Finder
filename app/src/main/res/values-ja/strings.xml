@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ホイッスルファインダー</string>
+    <string name="monitoring">監視中&#8230;</string>
+    <string name="service_stopped">サービス停止中</string>
+    <string name="settings">設定</string>
+    <string name="sensitivity">感度</string>
+    <string name="language">言語</string>
+    <string name="english">英語</string>
+    <string name="turkish">トルコ語</string>
+    <string name="german">ドイツ語</string>
+    <string name="spanish">スペイン語</string>
+    <string name="french">フランス語</string>
+    <string name="russian">ロシア語</string>
+    <string name="chinese">中国語</string>
+    <string name="japanese">日本語</string>
+    <string name="arabic">アラビア語</string>
+    <string name="portuguese">ポルトガル語</string>
+    <string name="hindi">ヒンディー語</string>
+    <string name="grant_permission">許可を与える</string>
+    <string name="permission_required">このアプリを動作させるには、マイクと通知の許可が必要です。</string>
+    <string name="whistle_detected">ホイッスル検出！</string>
+</resources>
