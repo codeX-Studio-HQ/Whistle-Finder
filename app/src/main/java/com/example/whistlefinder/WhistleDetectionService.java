@@ -150,14 +150,16 @@ public class WhistleDetectionService extends Service {
         if (soundUriStr != null) {
             try {
                 Uri soundUri = Uri.parse(soundUriStr);
-                MediaPlayer mp = MediaPlayer.create(getApplicationContext(), soundUri);
-                if (mp != null) {
-                    mp.start();
-                    mp.setOnCompletionListener(MediaPlayer::release);
-                    return;
-                }
+                // Kalıcı izin kontrolü ve MediaPlayer yüklemesi
+                MediaPlayer mp = new MediaPlayer();
+                mp.setDataSource(getApplicationContext(), soundUri);
+                mp.setAudioStreamType(android.media.AudioManager.STREAM_ALARM);
+                mp.prepare();
+                mp.start();
+                mp.setOnCompletionListener(MediaPlayer::release);
+                return; // Başarılıysa bip çalma
             } catch (Exception e) {
-                Log.e("WhistleService", "Error playing custom sound", e);
+                Log.e("WhistleService", "Custom sound playback failed, falling back to beep", e);
             }
         }
 

@@ -6,6 +6,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.SeekBar;
@@ -100,9 +101,16 @@ public class SettingsActivity extends AppCompatActivity {
         updateSeekBarColor(seekbarSensitivity, savedSensitivity);
 
         findViewById(R.id.btn_select_sound).setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+            intent.addCategory(Intent.CATEGORY_OPENABLE);
             intent.setType("audio/*");
             startActivityForResult(intent, 200);
+        });
+
+        findViewById(R.id.btn_remove_sound).setOnClickListener(v -> {
+            prefs.edit().remove("alarm_sound").remove("alarm_sound_name").apply();
+            ((android.widget.TextView)findViewById(R.id.tv_selected_sound)).setText(R.string.default_sound);
+            android.widget.Toast.makeText(this, "Reset to default sound", android.widget.Toast.LENGTH_SHORT).show();
         });
 
         String savedSound = prefs.getString("alarm_sound_name", getString(R.string.default_sound));
@@ -128,16 +136,22 @@ public class SettingsActivity extends AppCompatActivity {
         if (requestCode == 200 && resultCode == RESULT_OK && data != null) {
             Uri uri = data.getData();
             if (uri != null) {
-                // URI'yi kaydet
+                // KRİTİK: Kalıcı izin al (Uygulama kapansa da sese erişebilmek için)
+                final int takeFlags = data.getFlags() & (Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                try {
+                    getContentResolver().takePersistableUriPermission(uri, takeFlags);
+                } catch (SecurityException e) {
+                    Log.e("Settings", "Failed to take persistable permission", e);
+                }
+
+                // URI'yi ve dosya adını kaydet
                 prefs.edit().putString("alarm_sound", uri.toString()).apply();
-                
-                // Dosya adını alıp göster (opsiyonel ama şık durur)
                 String fileName = getFileName(uri);
                 prefs.edit().putString("alarm_sound_name", fileName).apply();
-                ((android.widget.TextView)findViewById(R.id.tv_selected_sound)).setText(fileName);
                 
-                // Kalıcı izin al (servis için önemli)
-                getContentResolver().takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                // Arayüzü güncelle
+                ((android.widget.TextView)findViewById(R.id.tv_selected_sound)).setText(fileName);
+                android.widget.Toast.makeText(this, "Sound saved: " + fileName, android.widget.Toast.LENGTH_SHORT).show();
             }
         }
     }

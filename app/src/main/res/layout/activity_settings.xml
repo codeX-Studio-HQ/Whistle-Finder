@@ -171,16 +171,36 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_select_sound"
-                    style="?attr/materialButtonOutlinedStyle"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@string/select_sound"
-                    android:textAllCaps="false"
-                    android:textColor="@color/neon_green"
-                    app:strokeColor="@color/neon_green" />
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_select_sound"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/select_sound"
+                        android:textAllCaps="false"
+                        android:textColor="@color/neon_green"
+                        app:strokeColor="@color/neon_green" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_remove_sound"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:padding="0dp"
+                        app:icon="@android:drawable/ic_menu_delete"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp"
+                        app:iconTint="@color/neon_red"
+                        app:strokeColor="@color/neon_red" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_selected_sound"
