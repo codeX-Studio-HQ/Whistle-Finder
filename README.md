@@ -5,7 +5,7 @@ Made With ❤️ by **codeX** Studio
 > **Developer:** Wrenchiz  
 > **Discord:** 88wrench_iz  
 > **Version:** Beta v1.1  
-> **Download APK:** [WhistleFinder-Betav1.1.apk]()  
+> **Download APK:** [WhistleFinder-Betav1.1.apk](https://github.com/codeX-Studio-HQ/Whistle-Finder/releases/download/v1.1/WhistleFinder-Beta-v1.1.apk)  
 
 ---
 
