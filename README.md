@@ -1,4 +1,4 @@
-![WhistleFinderLogo](.art/Whistle_Finder_2.png)
+![WhistleFinderLogo](.Art/Whistle_Finder_2.png)
 # Whistle Finder (Beta v1.1)
 Made With ❤️ by **codeX** Studio
 > **Developer:** Wrenchiz  
